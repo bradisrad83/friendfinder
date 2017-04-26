@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey</title>
-    <!-- We link our html to the Bootstrap CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <title>Friend Finder</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <link rel="stylesheet" href="/assets/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -18,13 +19,13 @@
             <h3>About You</h3>
             <div class="form-group">
                 <label for="name">Name (Required)</label>
-                <input type="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="type your name">
+                <input type="text" class="form-control" id="name" placeholder="type your name">
                 <br>
-                <label for="picturelink">Link to a current photo (Required)</label>
-                <input type="photolink" class="form-control" id="photolink" placeholder="paste in a link">
+                <label for="photolink">Link to a current photo (Required)</label>
+                <input type="text" class="form-control" id="photolink" placeholder="paste in a link">
             </div>
             <br>
-            <h5>For the questions: 1 = disagree and 5 = strongly agree.  Please choose your answers based on this scale.</h5>
+            <h4>For the questions: 1 = disagree and 5 = strongly agree.  Please choose your answers based on this scale.</h4>
             <br>
             <div class="form-group">
                 <label>Question 1: On your day off how likely are you to stay in your home all day?</label>
@@ -136,11 +137,17 @@
             </select>
             </div>
             <br>
-            <button type="submit" class="btn btn-primary" id=submit>Submit</button>
+            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
         </form>
+        <br>
+        <br>
+        <div class="col s4">
+            <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/bradisrad83/friendfinder" target='_blank'>GitHub Repo</a></p>
+        </div>
     </div>
-    <script src="/assets/js/logic.js">
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>

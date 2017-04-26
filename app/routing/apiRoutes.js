@@ -6,6 +6,8 @@ module.exports = function(app) {
     });
 
     app.post("/api/friends", function(request, response) {
+        console.log("hitting post route");
+        console.log(request.body.scores);
         var newFriendScore = request.body.scores;
         var scoreArray = [];
         var friendCount = 0;
