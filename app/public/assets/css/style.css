@@ -1,0 +1,23 @@
+.jumbotron {
+    margin-left: 20%;
+    margin-right: 20%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+h1 {
+    margin-left: 5%;
+}
+
+.btn-primary {
+    margin-left: 5%;
+}
+
+h3 {
+    margin-left: 5%;
+}
+
+h4 {
+    margin-left: 5%;
+}

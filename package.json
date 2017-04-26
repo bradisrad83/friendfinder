@@ -1,0 +1,20 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "friendfinder homework",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradisrad83/friendfinder.git"
+  },
+  "author": "Brad Goldsmith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bradisrad83/friendfinder/issues"
+  },
+  "homepage": "https://github.com/bradisrad83/friendfinder#readme"
+}
