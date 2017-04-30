@@ -2,152 +2,172 @@
 <html lang="en-us">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friend Finder</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friend Finder</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
 
 </head>
 
 <body>
-    <div class="container">
-        <h2>Survey Questions</h2>
-        <form>
-            <h3>About You</h3>
-            <div class="form-group">
-                <label for="name">Name (Required)</label>
-                <input type="text" class="form-control" id="name" placeholder="type your name">
-                <br>
-                <label for="photolink">Link to a current photo (Required)</label>
-                <input type="text" class="form-control" id="photolink" placeholder="paste in a link">
-            </div>
-            <br>
-            <h4>For the questions: 1 = disagree and 5 = strongly agree.  Please choose your answers based on this scale.</h4>
-            <br>
-            <div class="form-group">
-                <label>Question 1: On your day off how likely are you to stay in your home all day?</label>
-                <select class="form-control" id="q1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-            </div>
-            <br>
-            <div class="form-group">
-                <label>Question 2: Do you get upset if someone cuts you in a line?</label>
-                <select class="form-control" id="q2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-            </div>
-            <br>
-            <div class="form-group">
-                <label>Question 3: Do you like animals?</label>
-                <select class="form-control" id="q3">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-            </div>
-            <br>
-            <div class="form-group">
-                <label>Question 4: Do you enjoy working out and going to the gym? </label>
-                <select class="form-control" id="q4">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-            </div>
-            <br>
-            <div class="form-group">
-                <label>Question 5: Are you introverted?</label>
-                <select class="form-control" id="q5">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-            </div>
-            <br>
-            <div class="form-group">
-                <label>Question 6: I am open to new experiences?</label>
-                <select class="form-control" id="q6">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-            </div>
-            <br>
-            <div class="form-group">
-                <label>Question 7: Are you a fan of Star Wars?</label>
-                <select class="form-control" id="q7">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-            </div>
-            <br>
-            <div class="form-group">
-                <label>Question 8: Do you watch an excessive amount of TV?</label>
-                <select class="form-control" id="q8">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-            </div>
-            <br>
-            <div class="form-group">
-                <label>Question 9: Do you change your own oil?</label>
-                <select class="form-control" id="q9">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-            </div>
-            <br>
-            <div class="form-group">
-                <label>Question 10: Do you consume alcohol?</label>
-                <select class="form-control" id="q10">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-            </div>
-            <br>
-            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-        </form>
+  <div class="container">
+    <h2>Survey Questions</h2>
+    <form>
+      <h3>About You</h3>
+      <div class="form-group">
+        <label for="name">Name (Required)</label>
+        <input type="text" class="form-control" id="name" placeholder="type your name">
         <br>
-        <br>
-        <div class="col s4">
-            <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/bradisrad83/friendfinder" target='_blank'>GitHub Repo</a></p>
-        </div>
+        <label for="photolink">Link to a current photo (Required)</label>
+        <input type="text" class="form-control" id="photolink" placeholder="paste in a link">
+      </div>
+      <br>
+      <h4>For the questions: 1 = disagree and 5 = strongly agree.  Please choose your answers based on this scale.</h4>
+      <br>
+      <div class="form-group">
+        <label>Question 1: On your day off how likely are you to stay in your home all day?</label>
+        <select class="form-control" id="q1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label>Question 2: Do you get upset if someone cuts you in a line?</label>
+        <select class="form-control" id="q2">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label>Question 3: Do you like animals?</label>
+        <select class="form-control" id="q3">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label>Question 4: Do you enjoy working out and going to the gym? </label>
+        <select class="form-control" id="q4">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label>Question 5: Are you introverted?</label>
+        <select class="form-control" id="q5">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label>Question 6: I am open to new experiences?</label>
+        <select class="form-control" id="q6">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label>Question 7: Are you a fan of Star Wars?</label>
+        <select class="form-control" id="q7">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label>Question 8: Do you watch an excessive amount of TV?</label>
+        <select class="form-control" id="q8">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label>Question 9: Do you change your own oil?</label>
+        <select class="form-control" id="q9">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label>Question 10: Do you consume alcohol?</label>
+        <select class="form-control" id="q10">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+    </form>
+    <br>
+    <br>
+    <div class="col s4">
+      <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/bradisrad83/friendfinder" target='_blank'>GitHub Repo</a></p>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="/assets/js/main.js"></script>
+  </div>
+
+  <div class="modal fade" id="modal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h1 class="modal-title text-center">You have a match!</h1>
+        </div>
+        <div class="modal-body">
+          <h1 id="match-name" class="text-center"></h1>
+          <img src="" alt="" id="match-image" class="img-responsive">
+          <h4 id="message" class="text-center"></h4>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="/assets/js/main.js"></script>
 </body>
 
 </html>
